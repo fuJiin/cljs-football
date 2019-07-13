@@ -7,4 +7,4 @@ node_modules
 # CLJS
 .nrepl-port
 .shadow-cljs
-public/dist
+public/js/dist

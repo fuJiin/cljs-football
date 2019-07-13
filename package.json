@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "footballsimulationengine": "^2.2.1"
+    "create-react-class": "^15.6.3",
+    "footballsimulationengine": "^2.2.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }

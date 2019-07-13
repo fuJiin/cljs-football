@@ -1,16 +1,18 @@
 ;; shadow-cljs configuration
 {:source-paths
- [
-  "src"
-  ]
+ ["src"]
 
  :dependencies
- []
+ [[reagent "0.8.1"]]
 
  :builds
- {:app {:target :node-script
-        :main cljs-football.core/main
-        :output-to "public/dist/app.js"}}
-
- :dev-http {8000 "public"}
+ {:app
+  {:target :browser
+   :output-dir "public/js/dist"
+   :asset-path "js/dist"
+   :modules {:app {:entries [cljs-football.core]}}
+   :devtools {:before-load cljs-football.core/stop
+              :after-load cljs-football.core/start
+              :http-root "public"
+              :http-port 7777}}}
  }
