@@ -1,0 +1,16 @@
+;; shadow-cljs configuration
+{:source-paths
+ [
+  "src"
+  ]
+
+ :dependencies
+ []
+
+ :builds
+ {:app {:target :node-script
+        :main cljs-football.core/main
+        :output-to "public/dist/app.js"}}
+
+ :dev-http {8000 "public"}
+ }

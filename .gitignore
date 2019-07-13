@@ -1,0 +1,10 @@
+# OSX
+.DS_Store
+
+# JS
+node_modules
+
+# CLJS
+.nrepl-port
+.shadow-cljs
+public/dist
